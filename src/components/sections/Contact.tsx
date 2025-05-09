@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useEffect } from 'react';
 import { Mail, MapPin, Phone, Send, MessageSquare } from 'lucide-react';
 
 const Contact = () => {
@@ -17,6 +17,20 @@ const Contact = () => {
 
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const validateForm = (): boolean => {
     let valid = true;
@@ -63,12 +77,10 @@ const Contact = () => {
     
     setSubmitting(true);
     
-    // Simulate form submission
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
       
-      // Reset form after submission
       setFormData({
         name: '',
         email: '',
@@ -76,7 +88,6 @@ const Contact = () => {
         message: '',
       });
       
-      // Reset submission status after 5 seconds
       setTimeout(() => {
         setSubmitted(false);
       }, 5000);
@@ -99,8 +110,10 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Information */}
-          <div className="flex flex-col justify-center" data-aos="fade-right">
+          <div 
+            className="flex flex-col justify-center" 
+            data-aos={isMobile ? 'fade-up' : 'fade-left'}
+          >
             <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-semibold mb-6">Get In Touch</h3>
               
@@ -112,10 +125,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-lg">Email</h4>
                     <a
-                      href="mailto:your-email@example.com"
+                      href="mailto:mdgulzar.tech@gmail.com"
                       className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                     >
-                      your-email@example.com
+                      mdgulzar.tech@gmail.com
                     </a>
                   </div>
                 </div>
@@ -139,10 +152,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-lg">Phone</h4>
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+917070245172"
                       className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                     >
-                      +91 1234 567 890
+                      +91 7070 245 172
                     </a>
                   </div>
                 </div>
@@ -152,7 +165,7 @@ const Contact = () => {
                 <h4 className="font-medium text-lg mb-4">Social Profiles</h4>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/mdgulzar-tech"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors"
@@ -175,7 +188,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://github.com/Gulzaralice1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors"
@@ -196,7 +209,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/gulzaralice"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-full transition-colors"
@@ -244,8 +257,9 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div data-aos="fade-left">
+          <div 
+            data-aos={isMobile ? 'fade-up' : 'fade-right'}
+          >
             <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
               
@@ -271,7 +285,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-1">
-                      Your Name
+                      Gulzar Alice
                     </label>
                     <input
                       type="text"

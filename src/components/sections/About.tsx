@@ -18,17 +18,24 @@ const About = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-600 dark:bg-primary-500 rounded-full flex items-center justify-center text-white">
+              {/* <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-600 dark:bg-primary-500 rounded-full flex items-center justify-center text-white">
                 <div className="text-center">
                   <p className="font-bold text-lg">4+</p>
                   <p className="text-sm">Years</p>
                   <p className="text-sm">Experience</p>
                 </div>
+              </div> */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-600 dark:bg-primary-500 rounded-full flex items-center justify-center text-white">
+                <div className="text-center">
+                  <p className="font-bold text-lg">10+</p>
+                  <p className="text-sm">Projects</p>
+                  <p className="text-sm">Completed</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="md:w-1/2" data-aos="fade-left">
+          <div className="md:w-1/2" data-aos="fade-up">
             <h2 className="text-3xl font-bold mb-2 inline-flex items-center gap-2">
               <User size={28} className="text-primary-600 dark:text-primary-400" />
               About Me

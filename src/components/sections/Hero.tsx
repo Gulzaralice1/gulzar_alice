@@ -117,7 +117,7 @@ const Hero = () => {
         >
           Hi, I'm{' '}
           <span className="text-primary-600 dark:text-primary-400">
-            [Your Name]
+            Gulzar Alice
           </span>
         </h1>
         <h2

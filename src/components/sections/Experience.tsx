@@ -15,18 +15,18 @@ const Experience = () => {
       id: 1,
       title: 'B.Tech in Computer Science',
       organization: 'Lovely Professional University',
-      period: '2019 - 2023',
+      period: '2024 - 2028',
       description: 'Studied computer science with a focus on software engineering, web development, and database management. Participated in multiple hackathons and coding competitions.',
       type: 'education',
     },
-    {
-      id: 2,
-      title: 'Web Development Intern',
-      organization: 'TechSolutions Inc.',
-      period: 'May 2022 - Aug 2022',
-      description: 'Developed and maintained responsive web applications using React. Collaborated with the design team to implement UI/UX improvements. Participated in agile development cycles.',
-      type: 'experience',
-    },
+    // {
+    //   id: 2,
+    //   title: 'Web Development Intern',
+    //   organization: 'TechSolutions Inc.',
+    //   period: 'May 2022 - Aug 2022',
+    //   description: 'Developed and maintained responsive web applications using React. Collaborated with the design team to implement UI/UX improvements. Participated in agile development cycles.',
+    //   type: 'experience',
+    // },
     {
       id: 3,
       title: 'Advanced Web Development Certificate',
@@ -43,14 +43,14 @@ const Experience = () => {
       description: 'Worked on building RESTful APIs using Node.js and Express. Implemented database solutions using MongoDB and PostgreSQL. Collaborated with senior developers on large-scale projects.',
       type: 'experience',
     },
-    {
-      id: 5,
-      title: 'Junior Software Engineer',
-      organization: 'WebCreations Studio',
-      period: 'Jun 2023 - Present',
-      description: 'Developing full-stack applications using React, Node.js, and various databases. Implementing authentication systems, payment gateways, and other complex features. Mentoring junior developers and interns.',
-      type: 'experience',
-    },
+    // {
+    //   id: 5,
+    //   title: 'Junior Software Engineer',
+    //   organization: 'WebCreations Studio',
+    //   period: 'Jun 2023 - Present',
+    //   description: 'Developing full-stack applications using React, Node.js, and various databases. Implementing authentication systems, payment gateways, and other complex features. Mentoring junior developers and interns.',
+    //   type: 'experience',
+    // },
   ];
 
   // Sort items by chronological order (newest first)

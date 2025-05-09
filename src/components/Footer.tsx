@@ -12,14 +12,14 @@ const Footer = () => {
               Portfolio
             </p>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              © {currentYear} [Your Name]. All rights reserved.
+              © {currentYear} Gulzar Alice. All rights reserved.
             </p>
           </div>
 
           <div className="flex flex-col md:flex-row items-center">
             <div className="flex space-x-4 mb-4 md:mb-0 md:mr-8">
               <a
-                href="#"
+                href="https://github.com/Gulzaralice1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/mdgulzar-tech" // Changed from www.linkedin.com to https://www.linkedin.com
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:your-email@example.com"
+                href="mailto:mdgulzar.tech@gmail.com"
                 className="text-gray-600 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors"
                 aria-label="Email"
               >
