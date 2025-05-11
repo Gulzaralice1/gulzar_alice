@@ -1,10 +1,17 @@
 import { useEffect, useRef } from 'react';
 import { useTheme } from '../../contexts/ThemeContext';
 import { ArrowDown } from 'lucide-react';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   const { theme } = useTheme();
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  const playTypingSound = () => {
+    const audio = new Audio('/typing-sound.mp3');
+    audio.volume = 0.2;
+    audio.play().catch(error => console.log('Audio play failed:', error));
+  };
 
   // Particle animation
   useEffect(() => {
@@ -125,7 +132,22 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          Software Engineer | Web Developer | UI/UX Enthusiast
+          <TypeAnimation
+            sequence={[
+              'Software Engineer',
+              1000,
+              'Web Developer',
+              1000,
+              'UI/UX Enthusiast',
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            cursor={true}
+            preRenderFirstString={false}
+            beforeType={playTypingSound}
+          />
         </h2>
         <div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
