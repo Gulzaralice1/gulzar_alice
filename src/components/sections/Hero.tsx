@@ -169,7 +169,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce w-full flex justify-center">
         <a
           href="#about"
           aria-label="Scroll down"
