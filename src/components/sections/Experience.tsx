@@ -31,18 +31,18 @@ const Experience = () => {
       id: 3,
       title: 'Advanced Web Development Certificate',
       organization: 'Udemy',
-      period: 'Dec 2021',
+      period: 'Dec 2024',
       description: 'Completed a comprehensive course on modern web development practices, including React, Node.js, and database integration.',
       type: 'education',
-    },
-    {
-      id: 4,
-      title: 'Software Developer Intern',
-      organization: 'InnovateTech',
-      period: 'Jan 2023 - Apr 2023',
-      description: 'Worked on building RESTful APIs using Node.js and Express. Implemented database solutions using MongoDB and PostgreSQL. Collaborated with senior developers on large-scale projects.',
-      type: 'experience',
-    },
+    }
+    // {
+    //   id: 4,
+    //   title: 'Software Developer Intern',
+    //   organization: 'InnovateTech',
+    //   period: 'Jan 2023 - Apr 2023',
+    //   description: 'Worked on building RESTful APIs using Node.js and Express. Implemented database solutions using MongoDB and PostgreSQL. Collaborated with senior developers on large-scale projects.',
+    //   type: 'experience',
+    // },
     // {
     //   id: 5,
     //   title: 'Junior Software Engineer',

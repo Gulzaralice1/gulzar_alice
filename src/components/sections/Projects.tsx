@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Github, ExternalLink, X, Code } from 'lucide-react';
 
@@ -37,36 +38,26 @@ const Projects = () => {
       liveUrl: 'https://gulzaralice1.github.io/cool-moon-Restaurants/',
       category: 'web',
     },
-    // {
-    //   id: 3,
-    //   title: 'Weather Dashboard',
-    //   description: 'A weather application that displays current and forecasted weather data using a third-party API. Includes location search and interactive UI elements.',
-    //   image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    //   technologies: ['JavaScript', 'HTML', 'CSS', 'Weather API'],
-    //   githubUrl: '#',
-    //   liveUrl: '#',
-    //   category: 'web',
-    // },
-    // {
-    //   id: 4,
-    //   title: 'Fitness Tracker',
-    //   description: 'A mobile application for tracking workouts, setting fitness goals, and monitoring progress over time. Includes data visualization and sharing capabilities.',
-    //   image: 'https://images.pexels.com/photos/4498362/pexels-photo-4498362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    //   technologies: ['React Native', 'Firebase', 'Chart.js'],
-    //   githubUrl: '#',
-    //   liveUrl: '#',
-    //   category: 'mobile',
-    // },
-    // {
-    //   id: 5,
-    //   title: 'Recipe Finder',
-    //   description: 'A web application that helps users discover recipes based on ingredients they have. Features include filtering by dietary restrictions and saving favorites.',
-    //   image: 'https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    //   technologies: ['Vue.js', 'Vuex', 'Node.js', 'MongoDB'],
-    //   githubUrl: '#',
-    //   liveUrl: '#',
-    //   category: 'web',
-    // },
+    {
+      id: 3,
+      title: 'Weather Dashboard',
+      description: 'A weather application that displays current and forecasted weather data using a third-party API. Includes location search and interactive UI elements.',
+      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      technologies: ['JavaScript', 'HTML', 'CSS', 'Weather API'],
+      githubUrl: '#',
+      liveUrl: 'https://gulzaralice1.github.io/Weather-app/',
+      category: 'web',
+    },
+    {
+      id: 4,
+      title: 'U-Learn',
+      description: 'An e-learning platform for students to access courses, track progress, and interact with instructors. Features include video lessons, quizzes, and discussion forums.',
+      image: 'https://github.com/Gulzaralice1/website-assert/blob/40d10916cf5ecbccee032b7b2940b1073e0cb93b/assert/gulzaralice/u-learn.png?raw=true',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+      githubUrl: '#',
+      liveUrl: '#',
+      category: 'web',
+    },
     {
       id: 6,
       title: 'Data Visualization Dashboard',
@@ -77,7 +68,7 @@ const Projects = () => {
       liveUrl: '#',
       category: 'other',
     },
-  ];
+    ];
 
   const openModal = (project: Project) => {
     setSelectedProject(project);
