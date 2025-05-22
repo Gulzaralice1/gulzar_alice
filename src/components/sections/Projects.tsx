@@ -52,7 +52,7 @@ const Projects = () => {
       id: 4,
       title: 'U-Learn',
       description: 'An e-learning platform for students to access courses, track progress, and interact with instructors. Features include video lessons, quizzes, and discussion forums.',
-      image: 'https://github.com/Gulzaralice1/website-assert/blob/40d10916cf5ecbccee032b7b2940b1073e0cb93b/assert/gulzaralice/u-learn.png?raw=true',
+      image: 'https://raw.githubusercontent.com/Gulzaralice1/website-assert/40d10916cf5ecbccee032b7b2940b1073e0cb93b/assert/gulzaralice/u-learn.png?raw=true',
       technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
       githubUrl: '#',
       liveUrl: '#',
